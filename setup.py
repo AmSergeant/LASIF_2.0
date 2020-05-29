@@ -95,7 +95,8 @@ setup_config = dict(
     ],
     install_requires=[
         "scipy",
-        "obspy",
+        "obspy>=1.2.0",
+        "pyproj==1.9.6",
         "pyasdf",
         "progressbar",
         "colorama",
@@ -125,6 +126,8 @@ setup_config = dict(
         "toml",
         "tqdm",
         "cmasher",
+        "cartopy",
+        "instaseis",
     ],
     package_data={"lasif": get_package_data()},
     entry_points={
